@@ -1,0 +1,179 @@
+/* ===== Admin Dashboard Styling ===== */
+.dashboard {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tabs button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tabs .active {
+  background: #fff;
+  color: #000;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.tabs button:not(.active) {
+  background: #222;
+  color: #ccc;
+}
+
+.tabs button:not(.active):hover {
+  background: #333;
+  color: #fff;
+}
+
+/* Card sections */
+.card {
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.card form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card input {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #000;
+  color: #fff;
+}
+
+.card input:focus {
+  outline: none;
+  border-color: #888;
+}
+
+.card button {
+  background: #fff;
+  color: #000;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #ddd;
+}
+
+/* Tables */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+thead {
+  background: #333;
+  color: #ccc;
+}
+
+thead th {
+  padding: 0.8rem;
+  border: 1px solid #444;
+  text-align: left;
+}
+
+tbody tr {
+  height: 100px;
+  transition: background 0.2s;
+}
+
+tbody tr:nth-child(even) {
+  background: #111;
+}
+
+tbody tr:nth-child(odd) {
+  background: #1a1a1a;
+}
+
+tbody tr:hover {
+  background: #222;
+}
+
+tbody td {
+  padding: 0.8rem;
+  border: 1px solid #444;
+  vertical-align: middle;
+}
+
+tbody td img {
+  height: 80px;
+  width: auto;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons inside table */
+.table-btn {
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background: #666;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background: #888;
+}
+
+.btn-delete {
+  background: #fff;
+  color: #000;
+}
+
+.btn-delete:hover {
+  background: #ddd;
+}
